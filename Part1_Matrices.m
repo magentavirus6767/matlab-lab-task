@@ -1,0 +1,12 @@
+A = magic(6);
+A(:,1) = [1; -2; -3; -4; -5; -6];
+z = [1; 2; 3; 4; 5; 6];
+x = A \ z;
+d = det(A);
+subA = A(1:4, 1:4);
+disp('Solution x:'); 
+disp(x);
+disp('Determinant:'); 
+disp(d);
+disp('4x4 Submatrix:'); 
+disp(subA);
